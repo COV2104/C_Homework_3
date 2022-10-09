@@ -17,7 +17,6 @@ if (oldNumber == reversNumber)
     Console.WriteLine($"Число {oldNumber} является полиндромом");
 else
     Console.WriteLine($"Число {oldNumber} не является полиндромом");
-    
 
 // 2 вариант (проверяет число любой размерности):
 
@@ -48,7 +47,14 @@ string Polindrome()
         }
 
     if (find)
-        result = $"Число {number} не является полиндром";
+        result = $"Число {number} не является полиндромом";
     return result;
 }
-Console.WriteLine(Polindrome());
+try
+{
+    Console.WriteLine(Polindrome());
+}
+catch
+{
+    System.Console.WriteLine("error: Необходимо вводить числа");
+}
